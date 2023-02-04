@@ -15,6 +15,11 @@ In this project the template of Mazer, applied in this spring rpoject with Tyhml
 Reference link for Mazer template; 
 https://zuramai.github.io/mazer/docs/
 
+- See WebController.java class to render web pages
+- HTML pages under resources/templates folder
+- assets folder under resources/templates folder
+
+
 # Thymleaf Reference
 https://www.baeldung.com/thymeleaf-in-spring-mvc
 
@@ -24,6 +29,8 @@ Java 11
 Maven
 
 Spring Boot 2.7.9-snapshot
+
+Tomcat WAR Build
 
 # Screenshot
 ![screenshot](screenshot.png)
