@@ -17,6 +17,11 @@ Reference link for Mazer template; https://zuramai.github.io/mazer/docs/
 # Thymleaf Reference
 https://www.baeldung.com/thymeleaf-in-spring-mvc
 
+# Version Details
+Java 11
+Maven
+Spring Boot 2.7.9-snapshot
+
 # Screenshot
 ![screenshot](screenshot.png)
 
