@@ -12,14 +12,17 @@ For further reference, please consider the following sections:
 
 # Project Introduction
 In this project the template of Mazer, applied in this spring rpoject with Tyhmleaf format.
-Reference link for Mazer template; https://zuramai.github.io/mazer/docs/
+Reference link for Mazer template; 
+https://zuramai.github.io/mazer/docs/
 
 # Thymleaf Reference
 https://www.baeldung.com/thymeleaf-in-spring-mvc
 
 # Version Details
 Java 11
+
 Maven
+
 Spring Boot 2.7.9-snapshot
 
 # Screenshot
