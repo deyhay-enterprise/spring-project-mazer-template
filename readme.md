@@ -17,5 +17,8 @@ Reference link for Mazer template; https://zuramai.github.io/mazer/docs/
 # Thymleaf Reference
 https://www.baeldung.com/thymeleaf-in-spring-mvc
 
+# Screenshot
+![screenshot](screenshot.png)
+
 
 
