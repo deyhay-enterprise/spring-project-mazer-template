@@ -11,7 +11,7 @@ For further reference, please consider the following sections:
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.7.9-SNAPSHOT/maven-plugin/reference/html/#build-image)
 
 # Project Introduction
-In this project the template of Mazer, applied in this spring rpoject with Tyhmleaf format.
+In this project the template of Mazer, applied in this spring project with Tyhmleaf format.
 Reference link for Mazer template; 
 https://zuramai.github.io/mazer/docs/
 
