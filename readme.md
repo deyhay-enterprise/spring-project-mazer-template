@@ -32,8 +32,27 @@ Spring Boot 2.7.9-snapshot
 
 Tomcat WAR Build
 
+# Updates on 29-Sep-2023
+Java version updated to 17
+
+Spring Boot version updated to 3.1.4
+
+JAR Build
+
+Mazer Theme version updated to 2.2.0
+
+No .html suffix needed on the URL controller. Removed the .html extension in all pages href. This is the only changes on HTML pages. 
+Thymeleaf related tags are not added. 
+
+# TODO
+Dockerfile design   
+
 # Screenshot
+Screnshot
 ![screenshot](screenshot.png)
+
+Screenshot v2.2.0
+![screenshot v2.2.0](screenshot_mazer_v2.2.0.png)
 
 
 

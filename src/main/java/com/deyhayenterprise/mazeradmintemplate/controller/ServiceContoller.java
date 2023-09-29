@@ -1,5 +1,6 @@
 package com.deyhayenterprise.mazeradmintemplate.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ServiceContoller {
 
-    @RequestMapping("/greetingNoParamTest")
+    @GetMapping("/greetingNoParamTest")
 	public String greetingNoParamTest() {
 
 		log.info("greeting..");

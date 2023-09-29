@@ -2,7 +2,8 @@ package com.deyhayenterprise.mazeradmintemplate.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,295 +13,339 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class WebController {
 
-    @RequestMapping(value = { "/", "/index", "/index.html" })
+    @GetMapping(value = { "/", "/index", "/index.html" })
 	public String indexMain(Model model) {
-
 		log.info("web controller class paramaters as model");
 
         return "index";
     }    	
 
-	@RequestMapping(value = { "/application-chat", "/application-chat.html" })
+	@GetMapping("/application-chat")
 	public String applicationChat() {
 		return "application-chat";
 	}
 
-	@RequestMapping(value = { "/application-checkout", "/application-checkout.html" })
+	@GetMapping("/application-checkout")
 	public String applicationCheckout() {
 		return "application-checkout";
 	}
 
-	@RequestMapping(value = { "/application-email", "/application-email.html" })
+	@GetMapping("/application-email")
 	public String applicationEmail() {
 		return "application-email";
 	}
 
-	@RequestMapping(value = { "/application-gallery", "/application-gallery.html" })
+	@GetMapping("/application-gallery")
 	public String applicationGallery() {
 		return "application-gallery";
 	}
 
-	@RequestMapping(value = { "/error-403", "/error-403.html" })
+	@GetMapping("/error-403")
 	public String error403() {
 		return "error-403";
 	}	
 
-	@RequestMapping(value = { "/error-404", "/error-404.html" })
+	@GetMapping("/error-404")
 	public String error404() {
 		return "error-404";
 	}
 
-	@RequestMapping(value = { "/error-500", "/error-500.html" })
+	@GetMapping("/error-500")
 	public String error500() {
 		return "error-500";
 	}
 
-	@RequestMapping(value = { "/auth-login", "/auth-login.html" })
+	@GetMapping("/auth-login")
 	public String authLogin() {
 		return "auth-login";
 	}
 
-	@RequestMapping(value = { "/auth-register", "/auth-register.html" })
+	@GetMapping("/auth-register")
 	public String authRegister() {
 		return "auth-register";
 	}
 
-	@RequestMapping(value = { "/auth-forgot-password", "/auth-forgot-password.html" })
+	@GetMapping("/auth-forgot-password")
 	public String authForgotPassword() {
 		return "auth-forgot-password";
 	}
 
-	@RequestMapping(value = { "/component-alert", "/component-alert.html" })
+	@GetMapping("/component-accordion")
+	public String componentAccordion() {
+		return "component-accordion";
+	}
+
+	@GetMapping("/component-alert")
 	public String componentAlert() {
 		return "component-alert";
 	}
 
-	@RequestMapping(value = { "/component-badge", "/component-badge.html" })
+	@GetMapping("/component-badge")
 	public String componentBadge() {
 		return "component-badge";
 	}
 
-	@RequestMapping(value = { "/component-breadcrumb", "/component-breadcrumb.html" })
+	@GetMapping("/component-breadcrumb")
 	public String componentBreadcrumb() {
 		return "component-breadcrumb";
 	}
 
-	@RequestMapping(value = { "/component-button", "/component-button.html" })
+	@GetMapping("/component-button")
 	public String componentButton() {
 		return "component-button";
 	}
 
-	@RequestMapping(value = { "/component-card", "/component-card.html" })
+	@GetMapping("/component-card")
 	public String componentCard() {
 		return "component-card";
 	}
 
-	@RequestMapping(value = { "/component-carousel", "/component-carousel.html" })
+	@GetMapping("/component-carousel")
 	public String componentCarousel() {
 		return "component-carousel";
 	}
 
-	@RequestMapping(value = { "/component-dropdown", "/component-dropdown.html" })
+	@GetMapping("/component-collapse")
+	public String componentCollapse() {
+		return "component-collapse";
+	}
+
+	@GetMapping("/component-dropdown")
 	public String componentDropdown() {
 		return "component-dropdown";
 	}
 
-	@RequestMapping(value = { "/component-list-group", "/component-list-group.html" })
+	@GetMapping("/component-list-group")
 	public String componentListGroup() {
 		return "component-list-group";
 	}
 
-	@RequestMapping(value = { "/component-modal", "/component-modal.html" })
+	@GetMapping("/component-modal")
 	public String componentModal() {
 		return "component-modal";
 	}
 
-	@RequestMapping(value = { "/component-navs", "/component-navs.html" })
+	@GetMapping("/component-navs")
 	public String componentNavs() {
 		return "component-navs";
 	}
 
-	@RequestMapping(value = { "/component-pagination", "/component-pagination.html" })
+	@GetMapping("/component-pagination")
 	public String componentPagination() {
 		return "component-pagination";
 	}
 
-	@RequestMapping(value = { "/component-progress", "/component-progress.html" })
+	@GetMapping("/component-progress")
 	public String componentProgress() {
 		return "component-progress";
 	}
 
-	@RequestMapping(value = { "/component-spinner", "/component-spinner.html" })
+	@GetMapping("/component-spinner")
 	public String componentSpinner() {
 		return "component-spinner";
 	}
 
-	@RequestMapping(value = { "/component-tooltip", "/component-tooltip.html" })
+	@GetMapping("/component-toasts")
+	public String componentToasts() {
+		return "component-toasts";
+	}
+
+	@GetMapping("/component-tooltip")
 	public String componentTooltip() {
 		return "component-tooltip";
 	}
 
-	@RequestMapping(value = { "/extra-component-avatar", "/extra-component-avatar.html" })
+	@GetMapping("/extra-component-avatar")
 	public String extraComponentAvatar() {
 		return "extra-component-avatar";
 	}
 
-	@RequestMapping(value = { "/extra-component-divider", "/extra-component-divider.html" })
+	@GetMapping("/extra-component-date-picker")
+	public String extraComponentDatePicker() {
+		return "extra-component-date-picker";
+	}
+
+	@GetMapping("/extra-component-divider")
 	public String extraComponentDivider() {
 		return "extra-component-divider";
 	}
 
-	@RequestMapping(value = { "/extra-component-rating", "/extra-component-rating.html" })
+	@GetMapping("/extra-component-rating")
 	public String extraComponentRating() {
 		return "extra-component-rating";
 	}
 
-	@RequestMapping(value = { "/extra-component-sweetalert", "/extra-component-sweetalert.html" })
+	@GetMapping("/extra-component-sweetalert")
 	public String extraComponentSweetalert() {
 		return "extra-component-sweetalert";
 	}
 
-	@RequestMapping(value = { "/extra-component-toastify", "/extra-component-toastify.html" })
+	@GetMapping("/extra-component-toastify")
 	public String extraComponentToastify() {
 		return "extra-component-toastify";
 	}
 
-	@RequestMapping(value = { "/layout-default", "/layout-default.html" })
+	@GetMapping("/layout-default")
 	public String layoutDefault() {
 		return "layout-default";
 	}
 
-	@RequestMapping(value = { "/layout-horizontal", "/layout-horizontal.html" })
+	@GetMapping("/layout-horizontal")
 	public String layoutHorizontal() {
 		return "layout-horizontal";
 	}
 
-	@RequestMapping(value = { "/layout-vertical-1-column", "/layout-vertical-1-column.html" })
+	@GetMapping("/layout-rtl")
+	public String layoutRtl() {
+		return "layout-rtl";
+	}
+
+	@GetMapping("/layout-rtl-backup")
+	public String layoutRtlBackup() {
+		return "layout-rtl-backup";
+	}
+
+	@GetMapping("/layout-vertical-1-column")
 	public String layoutVertical1Column() {
 		return "layout-vertical-1-column";
 	}
 
-	@RequestMapping(value = { "/layout-vertical-navbar", "/layout-vertical-navbar.html" })
+	@GetMapping("/layout-vertical-navbar")
 	public String layoutVerticalNavbar() {
 		return "layout-vertical-navbar";
 	}
 
-	@RequestMapping(value = { "/form-editor-ckeditor", "/form-editor-ckeditor.html" })
+	@GetMapping("/form-editor-ckeditor")
 	public String formEditorCkeditor() {
 		return "form-editor-ckeditor";
 	}
 
-	@RequestMapping(value = { "/form-editor-quill", "/form-editor-quill.html" })
+	@GetMapping("/form-editor-quill")
 	public String formEditorQuill() {
 		return "form-editor-quill";
 	}
 
-	@RequestMapping(value = { "/form-editor-summernote", "/form-editor-summernote.html" })
+	@GetMapping("/form-editor-summernote")
 	public String formEditorSummernote() {
 		return "form-editor-summernote";
 	}
 
-	@RequestMapping(value = { "/form-editor-tinymce", "/form-editor-tinymce.html" })
+	@GetMapping("/form-editor-tinymce")
 	public String formEditorTinymce() {
 		return "form-editor-tinymce";
 	}
 
-	@RequestMapping(value = { "/form-element-checkbox", "/form-element-checkbox.html" })
+	@GetMapping("/form-element-checkbox")
 	public String formElementCheckbox() {
 		return "form-element-checkbox";
 	}
 
-	@RequestMapping(value = { "/form-element-input-group", "/form-element-input-group.html" })
+	@GetMapping("/form-element-input-group")
 	public String formElementInputGroup() {
 		return "form-element-input-group";
 	}
 
-	@RequestMapping(value = { "/form-element-input", "/form-element-input.html" })
+	@GetMapping("/form-element-input")
 	public String formElementInput() {
 		return "form-element-input";
 	}
 
-	@RequestMapping(value = { "/form-element-radio", "/form-element-radio.html" })
+	@GetMapping("/form-element-radio")
 	public String formElementRadio() {
 		return "form-element-radio";
 	}
 
-	@RequestMapping(value = { "/form-element-select", "/form-element-select.html" })
+	@GetMapping("/form-element-select")
 	public String formElementSelect() {
 		return "form-element-select";
 	}
 
-	@RequestMapping(value = { "/form-element-textarea", "/form-element-textarea.html" })
+	@GetMapping("/form-element-textarea")
 	public String formElementTextarea() {
 		return "form-element-textarea";
 	}
 
-	@RequestMapping(value = { "/form-layout", "/form-layout.html" })
+	@GetMapping("/form-layout")
 	public String formLayout() {
 		return "form-layout";
 	}
 
-	@RequestMapping(value = { "/table", "/table.html" })
+	@GetMapping("/form-validation-parsley")
+	public String formValidationParsley() {
+		return "form-validation-parsley";
+	}
+
+	@GetMapping("/table")
 	public String table() {
 		return "table";
 	}
 
-	@RequestMapping(value = { "/table-datatable", "/table-datatable.html" })
+	@GetMapping("/table-datatable")
 	public String tableDatatable() {
 		return "table-datatable";
 	}
 
-	@RequestMapping(value = { "/ui-chart-apexcharts", "/ui-chart-apexcharts.html" })
+	@GetMapping("/table-datatable-jquery")
+	public String tableDatatableJquery() {
+		return "table-datatable-jquery";
+	}
+
+	@GetMapping("/ui-chart-apexcharts")
 	public String uiChartApexcharts() {
 		return "ui-chart-apexcharts";
 	}
 
-	@RequestMapping(value = { "/ui-chart-chartjs", "/ui-chart-chartjs.html" })
+	@GetMapping("/ui-chart-chartjs")
 	public String uiChartChartjs() {
 		return "ui-chart-chartjs";
 	}
 
-	@RequestMapping(value = { "/ui-file-uploader", "/ui-file-uploader.html" })
+	@GetMapping("/ui-file-uploader")
 	public String uiFileUploader() {
 		return "ui-file-uploader";
 	}
 
-	@RequestMapping(value = { "/ui-icons-bootstrap-icons", "/ui-icons-bootstrap-icons.html" })
+	@GetMapping("/ui-icons-bootstrap-icons")
 	public String uiIconsBootstrapIcons() {
 		return "ui-icons-bootstrap-icons";
 	}
 
-	@RequestMapping(value = { "/ui-icons-dripicons", "/ui-icons-dripicons.html" })
+	@GetMapping("/ui-icons-dripicons")
 	public String uiIconsDripicons() {
 		return "ui-icons-dripicons";
 	}
 
-	@RequestMapping(value = { "/ui-icons-fontawesome", "/ui-icons-fontawesome.html" })
+	@GetMapping("/ui-icons-fontawesome")
 	public String uiIconsFontawesome() {
 		return "ui-icons-fontawesome";
 	}
 
-	@RequestMapping(value = { "/ui-map-google-map", "/ui-map-google-map.html" })
+	@GetMapping("/ui-map-google-map")
 	public String uiMapGoogleMap() {
 		return "ui-map-google-map";
 	}
 
-	@RequestMapping(value = { "/ui-map-jsvectormap", "/ui-map-jsvectormap.html" })
+	@GetMapping("/ui-map-jsvectormap")
 	public String uiMapJsvectormap() {
 		return "ui-map-jsvectormap";
 	}
 
-	@RequestMapping(value = { "/ui-widgets-chatbox", "/ui-widgets-chatbox.html" })
+	@GetMapping("/ui-multi-level-menu")
+	public String uiMultiLevelMenu() {
+		return "ui-multi-level-menu";
+	}
+
+	@GetMapping("/ui-widgets-chatbox")
 	public String uiWidgetsChatbox() {
 		return "ui-widgets-chatbox";
 	}
 
-	@RequestMapping(value = { "/ui-widgets-pricing", "/ui-widgets-pricing.html" })
+	@GetMapping("/ui-widgets-pricing")
 	public String uiWidgetsPricing() {
 		return "ui-widgets-pricing";
 	}
 
-	@RequestMapping(value = { "/ui-widgets-todolist", "/ui-widgets-todolist.html" })
+	@GetMapping("/ui-widgets-todolist")
 	public String uiWidgetsTodolist() {
 		return "ui-widgets-todolist";
 	}
