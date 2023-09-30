@@ -44,8 +44,14 @@ Mazer Theme version updated to 2.2.0
 No .html suffix needed on the URL controller. Removed the .html extension in all pages href. This is the only changes on HTML pages. 
 Thymeleaf related tags are not added. 
 
+# Updates on 30-Sep-2023
+Docker related settings added,
+- Dockerfile added
+- docker-compose.yml added
+- spring-boot-docker-compose dependency added to pom.xml
+
 # TODO
-Dockerfile design   
+~~Dockerfile design~~   
 
 # Screenshot
 Screnshot
